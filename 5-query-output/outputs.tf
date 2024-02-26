@@ -1,5 +1,6 @@
-# NOTE: we are using dynamic variables here, the ones at variables.tf were hardcoded
+# NOTE: We are using dynamic variables here, the ones at variables.tf were hardcoded
 # applying the changes will show the variables values on the terminal
+# but there are easier ways to see them once applied ex: $ terraform output
 output "instance_id" {
   description = "ID of the EC2 instance"
   value       = aws_instance.app_server.id
